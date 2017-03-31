@@ -1,0 +1,93 @@
+<!--people.html-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com http://griffis.edumedia.ca  'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content: griffis.edumedia.ca  placeholdit.imgix.net placehold.it ;"/>
+        <meta http-equiv="content-security-policy" content="default-src 'self' data: gap: http://*.edumedia.ca 'unsafe-inline' https://*.edumedia.ca 'unsafe-eval'" />
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="msapplication-tap-highlight" content="no"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+        
+        <!-- Include the compiled Ratchet CSS -->
+        <link href="css/ratchet.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>Giftr</title>
+        
+    </head>
+    <body>
+        <header class="bar bar-nav">
+            <a class="btn btn-link btn-nav pull-right" href="#peepsModal" id="addPeepBtn">
+                Add Person
+                <span class="icon icon-plus"></span>
+            </a>
+            <h1 class="title">GIFTR</h1>
+        </header>
+        <!--
+        <nav class="bar bar-tab">
+            <a class="tab-item">
+                <span class="icon icon-plus"></span>
+                <span class="tab-label">Add Person</span>
+            </a>
+        </nav>
+        -->
+        <div class="content">
+            <!-- read through localStorage for contacts -->
+            <ul class="table-view" id="peepList">
+
+<!--
+                  <li class="table-view-cell">
+                    <span class="name"><a href="#personModal">Bob Smith</a></span> 
+
+                    press and hold to open edit 
+                    <a class="navigate-right pull-right" href="gifts.html">  tap to view gifts 
+                      <span class="dob">March 10</span>
+                    </a>
+                </li>
+-->
+               
+            </ul>
+        </div>
+        
+        <div id="peepsModal" class="modal">
+            <header class="bar bar-nav">
+                <a id="cancelBtn1" class="icon icon-close pull-right" href="#peepsModal"></a>
+                <h1 class="title">Person Edit/Add</h1>
+            </header>
+
+            <div class="content">
+                <div class="content-padded">
+                    <form class="input-group">
+                        <div class="input-row">
+                            <label>Full name</label>
+                            <input id="peepName"type="text" placeholder="First Last"/>
+                        </div>
+                        <div class="input-row">
+                            <label>D.O.B.</label>
+                            <input id="peepDOB"type="date" placeholder="yyyy-mm-dd"/>
+                        </div>
+                    </form>
+                    <p class="content-padded">
+                        <button id="cancelBtn2" class="btn btn-block">
+                            <span class="icon icon-close"></span>
+                            Cancel 
+                        </button>
+                        <button id ="saveBtn" class="btn btn-primary btn-block">
+                            <span class="icon icon-check"></span>
+                            Save  
+                        </button>
+                        <button id ="deleteButton" class="btn btn-negative btn-block">
+                            Delete Contact
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <!-- include the compiled Ratchet JS -->
+        <script src="js/ratchet.js"></script>
+        <script src="js/moment.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!--gifts.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-security-policy" content="default-src 'self' data: gap: http://*.edumedia.ca 'unsafe-inline' https://*.edumedia.ca 'unsafe-eval'" />
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="msapplication-tap-highlight" content="no"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+        
+        <!-- Include the compiled Ratchet CSS -->
+        <link href="css/ratchet.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>Giftr</title>
+        
+    </head>
+<body>
+    <header id="title" class="bar bar-nav ">
+  <a href="index.html"class="icon icon-left-nav pull-left"></a>
+  <a id="addGiftBtn" href="#giftModal" class="icon icon-compose pull-right"></a>
+  <h2 id="giftTitle"></h2>
+<!--  <a class="icon icon-compose pull-right"></a>-->
+  
+    </header>
+    
+<!--Gift List-->
+    <div class = "content">
+    <ul id = "giftList" class="table-view">
+    </ul>
+    </div>
+     
+<!--Modal add Gift-->
+<div id="giftModal" class="modal">
+            <header class="bar bar-nav">
+                <a id="cancelGiftBtn1" class="icon icon-close pull-right" href="#giftModal"></a>
+                <h1 class="title">Gift Idea</h1>
+            </header>
+
+            <div class="content">
+                <div class="content-padded">
+                    <form class="input-group">
+                        <div class="input-row">
+                            <label>What?</label>
+                            <input id="item" type="text" placeholder="Bucket"/>
+                        </div>
+                        <div class="input-row">
+                            <label>Where?</label>
+                            <input id="at" type="text" placeholder="amazon"/>
+                        </div>
+                        <div class="input-row">
+                            <label>Cost?</label>
+                            <input id="cost" type="text" placeholder="$49.99"/>
+                        </div>
+                        <div class="input-row">
+                            <label>Url:</label>
+                            <input id="url" type="text" placeholder="www.amazon.ca"/>
+                        </div>
+                    </form>
+                    <p class="content-padded">
+                        <button id="cancelGiftBtn2" href="#giftModal" class="btn btn-block">
+                            <span class="icon icon-close"></span>
+                            Cancel <!-- dispatch click to the close button -->
+                        </button>
+                        <button id ="saveGiftBtn" href="#giftModal" class="btn btn-primary btn-block">
+                            <span class="icon icon-check"></span>
+                            Save  <!-- process the info then dispatch click to the close button -->
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+         <script type="text/javascript" src="cordova.js"></script>
+        <!-- include the compiled Ratchet JS -->
+        <script src="js/ratchet.js"></script>
+        <script src="js/moment.js"></script>
+        <script src="js/app.js"></script>
+</body>
+</html>

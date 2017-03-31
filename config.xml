@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ca.edumedia.griffis.Giftr" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Giftr-tout0004</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    
+    <preference name = "SplashScreen" value="screen"/>
+    <preference name = "SplashScreenDelay" value="5000"/>
+    
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+<!--
+      <splash src="www/res/screens/screen-hdpi-landscape.png" density="land-hdpi"/>
+      <splash src="www/res/screens/screen-xxhdpi-landscape.png" density="land-xxhdpi"/>
+      <splash src="www/res/screens/screen-mdpi-landscape.png" density="land-mdpi"/>
+      <splash src="www/res/screens/screen-xhdpi-landscape.png" density="land-xhdpi"/>
+      <splash src="www/res/screens/screen-xxxhdpi-landscape.png" density="land-xxxhdpi"/>
+
+      <splash src="www/res/screens/screen-hdpi-portrait.png" density="port-hdpi"/>
+      <splash src="www/res/screens/screen-mdpi-portrait.png" density="port-mdpi"/>
+      <splash src="www/res/screens/screen-xhdpi-portrait.png" density="port-xhdpi"/>
+      <splash src="www/res/screens/screen-xxhdpi-portrait.png" density="port-xxhdpi"/>
+      <splash src="www/res/screens/screen-xxxhdpi-portrait.png" density="port-xxxhdpi"/>
+  
+
+         <icon density="hdpi" src="www/res/icons/icon-72-hdpi.png" />
+         <icon density="mhdpi" src="www/res/icons/icon-96-mhdpi.png" />
+         <icon density="xhdpi" src="www/res/icons/icon-144-xhdpi.png" />
+         <icon density="xxhdpi" src="www/res/icons/icon-192-xxhdpi.png" />
+         <icon density="xxxhdpi" src="www/res/icons/icon-512-xxxhdpi.png"/>
+-->
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>

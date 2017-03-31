@@ -1,0 +1,85 @@
+*{
+    padding:0;
+    margin: 0;
+}
+/*
+span.a, a{
+   text-decoration: none;
+    color:#061F47;
+    
+}
+*/
+/*
+.content{
+    background-color: #6B90D0;
+}
+*/
+/*
+#peepList{
+    background-color:transparent;
+}
+#giftList{
+    background-color:transparent;
+}
+#giftListBox{
+    background-color:transparent;
+}
+*/
+.nameList{
+    padding-top: 7vh; 
+}
+
+#giftForm{
+    padding-top:6vh;
+}
+
+#giftListBox{
+    padding-top:6.5vh;
+}
+
+.input-row{
+    clear:left;
+}
+
+.btn-negative{
+    display: none;
+}
+
+.giftBox{
+    width:75%;
+    margin:0;
+}
+
+.table-view-cell{
+    padding: 15px 60px 11px 15px;
+}
+
+.btn-positive{
+    background-color:#C20900;
+}
+
+.giftH2{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.noGifts{
+    background-color:transparent;
+    display:none;
+    color:#A1D5FC;
+    padding-top:20vh;
+    padding-bottom: 80vh;
+    text-align: center;
+    font-size: 5vh;
+}
+
+/*
+.bar-nav{
+    background-color: #5A0BD4;  
+}
+*/
+/*
+.tablie-view:first-child{
+    margin-top:0;
+}*/
